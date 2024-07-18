@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore South Sudan</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link your CSS file for styling -->
+    <!-- Leaflet.js CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#attractions">Attractions</a></li>
+                    <li><a href="#map">Biodiversity Map</a></li>
+                    <li><a href="#accommodation">Accommodation</a></li>
+                    <li><a href="#tours">Tours</a></li>
+                    <li id="loginLink"><a href="login.html">Login</a></li>
+                    <li id="registerLink"><a href="register.html">Register</a></li>
+                    <li id="logoutLink" style="display:none;"><a href="#" id="logoutBtn">Logout</a></li>
+                </ul>
+            </nav>
+            <h1>Welcome to Wonderful South Sudan</h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>Discover South Sudan's Rich Biodiversity and Culture</h2>
+                <p>Explore our breathtaking national parks, cultural sites, and sustainable travel options.</p>
+            </div>
+        </section>
+
+        <!-- Attractions Section -->
+        <section id="attractions" class="attractions">
+            <div class="container">
+                <h2 class="section-title">Tourist Attractions</h2>
+                <div class="attraction-list">
+                    <div class="attraction-item">
+                        <h3>Boma National Park</h3>
+                        <img src="./attractions/Boma-National-Park.jpg" alt="Boma National Park Image 1">
+                        <p>Boma National Park is located in eastern South Sudan, close to the Ethiopian border. It is known for its stunning wildlife and beautiful landscapes.</p>
+                    </div>
+                    <div class="attraction-item">
+                        <h3>Bandingilo National Park</h3>
+                        <img src="./attractions/Bandingilo-National-Park (1).jpg" alt="Bandingilo National Park Image 1">
+                        <p>Bandingilo National Park is home to a diverse range of wildlife species and is known for its annual migration of antelopes.</p>
+                    </div>
+                    <div class="attraction-item">
+                        <h3>Southern National Park</h3>
+                        <img src="./attractions/southern natioanl park.jpg" alt="Southern National Park Image 1">
+                        <p>Southern National Park is a vast area with diverse ecosystems, including savannahs, forests, and wetlands.</p>
+                    </div>
+                    <div class="attraction-item">
+                        <h3>Shambe National Park</h3>
+                        <img src="./attractions/Shambe-National-Park.jpg" alt="Shambe National Park Image 1">
+                        <p>Shambe National Park is located in central South Sudan and is known for its diverse wildlife.</p>
+                    </div>
+                    <div class="attraction-item">
+                        <h3>Lantoto National Park</h3>
+                        <img src="./attractions/Lantoto-National-Park.jpg" alt="Lantoto National Park Image 1">
+                        <p>Lantoto National Park is located in southwestern South Sudan and consists of forests and open glades.</p>
+                    </div>
+                    <div class="attraction-item">
+                        <h3>Nimule National Park</h3>
+                        <img src="./attractions/Nimule-National-Park.jpg" alt="Nimule National Park Image 1">
+                        <p>Nimule National Park is located in the Eastern Equatoria region of South Sudan, known for its savanna woodland and diverse wildlife.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Biodiversity Map Section -->
+        <section id="map" class="biodiversity-map">
+            <div class="container">
+                <h2 class="section-title">Biodiversity Map</h2>
+                <div id="mapid" class="map-container"></div>
+            </div>
+        </section>
+
+        <!-- Accommodation Section -->
+        <section id="accommodation" class="accommodation">
+            <div class="container">
+                <h2 class="section-title">Eco-Friendly Accommodation</h2>
+                <div class="accommodation-list">
+                    <div class="accommodation-item">
+                        <h3>Luxury Lodges</h3>
+                        <img src="./attractions/pyramid_hotel.jpg" alt="Luxury Eco Lodges Image 1">
+                        <p>Experience luxury in the heart of South Sudan.</p>
+                    </div>
+                    <div class="accommodation-item">
+                        <h3>Riverside Cabins</h3>
+                        <img src="./attractions/riverside0.jpg" alt="Riverside Cabins Image 1">
+                        <p>Cozy cabins nestled along the riverbank for a peaceful retreat.</p>
+                    </div>
+                    <div class="accommodation-item">
+                        <h3>Safari Tents</h3>
+                        <img src="./attractions/rain_bow_hotel.jpg" alt="Safari Tents Image 1">
+                        <p>Stay in safari-style tents amidst the wildlife for an adventurous experience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tours Section -->
+        <section id="tours" class="tours">
+            <div class="container">
+                <h2 class="section-title">Recommended Tours</h2>
+                <div class="tour-list">
+                    <div class="tour-item">
+                        <h3>Wildlife Safari</h3>
+                        <img src="./attractions/wildlifesafari.jpg" alt="Wildlife Safari Image 1">
+                        <p>Embark on a thrilling safari to witness South Sudan’s diverse wildlife.</p>
+                    </div>
+                    <div class="tour-item">
+                        <h3>Cultural Exploration</h3>
+                        <img src="./attractions/wrestling.jpg" alt="Cultural Exploration Image 1">
+                        <p>Explore the rich cultural heritage of South Sudan through immersive experiences.</p>
+                    </div>
+                    <div class="tour-item">
+                        <h3>Nature Photography</h3>
+                        <img src="./attractions/nature.jpg" alt="Nature Photography Image 1">
+                        <p>Capture the stunning landscapes and biodiversity with our photography tours.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Explore South Sudan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Leaflet.js JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+
+    <!-- Initialize Leaflet map -->
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Initialize map
+        const map = L.map('mapid').setView([6.877, 31.307], 6); // Centered on South Sudan, adjust lat/lng and zoom as needed
+
+        // Add tile layer (replace with your preferred tile layer)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Example: Adding a marker
+        L.marker([6.877, 31.307]).addTo(map)
+        .bindPopup('Welcome to South Sudan!')
+        .openPopup();
+    });
+    </script>
+</body>
+</html>

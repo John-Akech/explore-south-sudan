@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Explore South Sudan</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link your CSS file for styling -->
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#attractions">Attractions</a></li>
+                    <li><a href="index.html#map">Biodiversity Map</a></li>
+                    <li><a href="index.html#accommodation">Accommodation</a></li>
+                    <li><a href="index.html#tours">Tours</a></li>
+                    <li id="loginLink"><a href="login.html">Login</a></li>
+                    <li id="registerLink"><a href="register.html">Register</a></li>
+                    <li id="logoutLink" style="display:none;"><a href="#" id="logoutBtn">Logout</a></li>
+                </ul>
+            </nav>
+            <h1>Register</h1>
+        </div>
+    </header>
+
+    <!-- Register Section -->
+    <main>
+        <section id="register" class="register">
+            <div class="container">
+                <h2 class="section-title">Register</h2>
+                <form id="registerForm">
+                    <div class="form-group">
+                        <label for="registerName">Name</label>
+                        <input type="text" id="registerName" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerEmail">Email</label>
+                        <input type="email" id="registerEmail" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerPassword">Password</label>
+                        <input type="password" id="registerPassword" name="password" required>
+                    </div>
+                    <button type="submit">Register</button>
+                </form>
+                <p>Already have an account? <a href="login.html">Login here</a></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Explore South Sudan. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
