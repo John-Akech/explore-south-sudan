@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Explore South Sudan</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link your CSS file for styling -->
+    <link rel="stylesheet" href="./login_styles.css"> <!-- Link your CSS file for styling -->
 </head>
 <body>
     <!-- Header -->
@@ -18,7 +18,7 @@
                     <li><a href="index.html#accommodation">Accommodation</a></li>
                     <li><a href="index.html#tours">Tours</a></li>
                     <li id="loginLink"><a href="login.html">Login</a></li>
-                    <li id="registerLink"><a href="register.html">Register</a></li>
+                    <li id="registerLink"><a href="registration.html">Register</a></li>
                     <li id="logoutLink" style="display:none;"><a href="#" id="logoutBtn">Logout</a></li>
                 </ul>
             </nav>
@@ -28,23 +28,37 @@
 
     <!-- Login Section -->
     <main>
-        <section id="login" class="login">
-            <div class="container">
-                <h2 class="section-title">Login</h2>
-                <form id="loginForm">
-                    <div class="form-group">
-                        <label for="loginEmail">Email</label>
-                        <input type="email" id="loginEmail" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="loginPassword">Password</label>
-                        <input type="password" id="loginPassword" name="password" required>
-                    </div>
-                    <button type="submit">Login</button>
-                </form>
-                <p>Don't have an account? <a href="register.html">Register here</a></p>
-            </div>
-        </section>
+        <div class="main">
+            <h3>Enter your login credentials</h3>
+            <form action="">
+                <label for="first">
+                    Username:
+                </label>
+                <input type="text" 
+                        id="first" 
+                        name="first" 
+                        placeholder="Enter your Username" required>
+
+                <label for="password">
+                    Password:
+                </label>
+                <input type="password"
+                        id="password" 
+                        name="password"
+                        placeholder="Enter your Password" required>
+
+                <div class="wrap">
+                    <button type="submit">
+                        Submit
+                    </button>
+                </div>
+            </form>
+            <p>Not registered?
+                <a href="registration.html"> <!-- Update here -->
+                    Create an account
+                </a>
+            </p>
+        </div>    
     </main>
 
     <!-- Footer -->

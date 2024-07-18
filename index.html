@@ -20,11 +20,11 @@
                     <li><a href="#accommodation">Accommodation</a></li>
                     <li><a href="#tours">Tours</a></li>
                     <li id="loginLink"><a href="login.html">Login</a></li>
-                    <li id="registerLink"><a href="register.html">Register</a></li>
+                    <li id="registerLink"><a href="registration.html">Register</a></li>
                     <li id="logoutLink" style="display:none;"><a href="#" id="logoutBtn">Logout</a></li>
                 </ul>
             </nav>
-            <h1>Welcome to Wonderful South Sudan</h1>
+            <!-- <h1>Welcome to Wonderful South Sudan</h1> -->
         </div>
     </header>
 
@@ -148,20 +148,20 @@
 
     <!-- Initialize Leaflet map -->
     <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        // Initialize map
-        const map = L.map('mapid').setView([6.877, 31.307], 6); // Centered on South Sudan, adjust lat/lng and zoom as needed
-
-        // Add tile layer (replace with your preferred tile layer)
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-
-        // Example: Adding a marker
-        L.marker([6.877, 31.307]).addTo(map)
-        .bindPopup('Welcome to South Sudan!')
-        .openPopup();
-    });
-    </script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize map
+            const map = L.map('mapid').setView([6.877, 31.307], 6); // Centered on South Sudan, adjust lat/lng and zoom as needed
+    
+            // Add tile layer (replace with your preferred tile layer)
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+    
+            // Example: Adding a marker
+            L.marker([6.877, 31.307]).addTo(map)
+            .bindPopup('Welcome to South Sudan!')
+            .openPopup();
+        });
+        </script>
 </body>
 </html>
